@@ -1,11 +1,12 @@
 var readlineSync = require('readline-sync');
 
-let w = readlineSync.question('Width:');
-let l = readlineSync.question('Length:');
-let a = Number(w);
-let b = Number(l);
-let ca = a*a;
-let cb = b*b
-let c = cb+ca;
-let diagonal = Math.pow(c,.5);
+const w = readlineSync.question('Width:');
+const l = readlineSync.question('Length:');
+const a = Number(w);
+const b = Number(l);
+const ca = a*a;
+const cb = b*b
+const c = cb+ca;
+const diagonal = Math.pow(c,.5);
+const finalanswer= Math.round(diagonal*100)/100
 console.log("A(n)"+ w +'-by-'+l+'-inch sheet of paper has a diagonal of '+diagonal+' inch(es)');

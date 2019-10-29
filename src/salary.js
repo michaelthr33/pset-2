@@ -11,4 +11,5 @@ let pretax= salary*contribution
 let taxes = federaltax+statetax+socialsecuritytax+medicaretax;
 let money = salary*pretax
 let takehomemoney= money*taxes
-console.log("Your take-home pay each check will be " +takehomemoney+".")
+let roundedtakehomemoney= Math.round(takehomemoney*100)/100
+console.log("Your take-home pay each check will be " +roundedtakehomemoney+".")
