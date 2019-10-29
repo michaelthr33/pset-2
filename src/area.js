@@ -1,7 +1,7 @@
 var readlineSync = require('readline-sync');
 
-const width = readlineSync.question('Width:');
-const length = readlineSync.question('Length:');
+const width = readlineSync.question("Width: ");
+const length = readlineSync.question("Length: ");
 const mm = 25.4;
 let l=number(length);
 let w=number(width);
